@@ -1,0 +1,138 @@
+﻿inventory_id,flower_id,variant_name,base_flower_name,color,stock_quantity,unit,selling_price,freshness_status,days_since_import,status
+INV0001,F001,Hoa hồng đỏ,Hoa hồng,đỏ,15,cành,44628,fresh,2,available
+INV0002,F001,Hoa hồng trắng,Hoa hồng,trắng,6,cành,65741,fresh,1,available
+INV0003,F002,Hoa cúc vàng,Hoa cúc,vàng,32,cành,29726,fresh,0,available
+INV0004,F002,Hoa cúc đỏ,Hoa cúc,đỏ,35,cành,16515,expired,10,expired
+INV0005,F002,Hoa cúc cam,Hoa cúc,cam,34,cành,23746,fresh,3,available
+INV0006,F002,Hoa cúc tím,Hoa cúc,tím,28,cành,29309,fresh,4,available
+INV0007,F002,Hoa cúc trắng,Hoa cúc,trắng,0,cành,15231,near_expiry,6,out_of_stock
+INV0008,F003,Hoa lan hồ điệp tím,Hoa lan hồ điệp,tím,6,cành,82156,near_expiry,6,near_expiry
+INV0009,F003,Hoa lan hồ điệp hồng,Hoa lan hồ điệp,hồng,6,cành,117052,near_expiry,5,near_expiry
+INV0010,F003,Hoa lan hồ điệp trắng,Hoa lan hồ điệp,trắng,38,cành,104671,fresh,0,available
+INV0011,F003,Hoa lan hồ điệp vàng,Hoa lan hồ điệp,vàng,29,cành,140284,fresh,1,available
+INV0012,F004,Hoa ly trắng,Hoa ly,trắng,4,cành,76006,expired,10,expired
+INV0013,F004,Hoa ly vàng,Hoa ly,vàng,14,cành,107930,fresh,1,available
+INV0014,F004,Hoa ly cam,Hoa ly,cam,14,cành,83238,near_expiry,6,near_expiry
+INV0015,F004,Hoa ly hồng,Hoa ly,hồng,17,cành,129429,expired,10,expired
+INV0016,F004,Hoa ly đỏ,Hoa ly,đỏ,23,cành,91319,near_expiry,5,near_expiry
+INV0017,F005,Hoa hướng dương vàng,Hoa hướng dương,vàng,4,bông,69920,expired,10,expired
+INV0018,F005,Hoa hướng dương cam,Hoa hướng dương,cam,10,bông,65005,fresh,3,available
+INV0019,F006,Hoa tulip tím,Hoa tulip,tím,40,cành,143000,fresh,3,available
+INV0020,F006,Hoa tulip cam,Hoa tulip,cam,20,cành,77331,fresh,3,available
+INV0021,F006,Hoa tulip vàng,Hoa tulip,vàng,2,cành,111347,near_expiry,6,low_stock
+INV0022,F007,Hoa cẩm chướng đỏ,Hoa cẩm chướng,đỏ,13,cành,26358,near_expiry,6,near_expiry
+INV0023,F007,Hoa cẩm chướng hồng,Hoa cẩm chướng,hồng,29,cành,14681,fresh,4,available
+INV0024,F007,Hoa cẩm chướng trắng,Hoa cẩm chướng,trắng,8,cành,18081,expired,8,expired
+INV0025,F007,Hoa cẩm chướng vàng,Hoa cẩm chướng,vàng,34,cành,18609,expired,9,expired
+INV0026,F008,Hoa baby hồng nhạt,Hoa baby,hồng nhạt,14,bó,14532,expired,8,expired
+INV0027,F008,Hoa baby trắng,Hoa baby,trắng,31,bó,12978,fresh,0,available
+INV0028,F009,Hoa đồng tiền cam,Hoa đồng tiền,cam,27,cành,29543,fresh,1,available
+INV0029,F009,Hoa đồng tiền trắng,Hoa đồng tiền,trắng,24,cành,22504,expired,9,expired
+INV0030,F010,Hoa thược dược trắng,Hoa thược dược,trắng,34,cành,47486,expired,10,expired
+INV0031,F010,Hoa thược dược cam,Hoa thược dược,cam,21,cành,37310,fresh,4,available
+INV0032,F010,Hoa thược dược tím,Hoa thược dược,tím,27,cành,40365,expired,7,expired
+INV0033,F010,Hoa thược dược đỏ,Hoa thược dược,đỏ,0,cành,47261,expired,8,out_of_stock
+INV0034,F010,Hoa thược dược hồng,Hoa thược dược,hồng,11,cành,63271,fresh,1,available
+INV0035,F011,Hoa mẫu đơn đỏ,Hoa mẫu đơn,đỏ,34,cành,139514,fresh,0,available
+INV0036,F011,Hoa mẫu đơn hồng,Hoa mẫu đơn,hồng,38,cành,112487,expired,7,expired
+INV0037,F011,Hoa mẫu đơn cam pastel,Hoa mẫu đơn,cam pastel,1,cành,84662,near_expiry,5,low_stock
+INV0038,F011,Hoa mẫu đơn trắng,Hoa mẫu đơn,trắng,19,cành,101385,fresh,0,available
+INV0039,F012,Hoa sen đỏ,Hoa sen,đỏ,31,bông,34535,expired,8,expired
+INV0040,F012,Hoa sen hồng,Hoa sen,hồng,8,bông,38414,expired,10,expired
+INV0041,F012,Hoa sen trắng,Hoa sen,trắng,30,bông,66031,fresh,2,available
+INV0042,F013,Hoa súng xanh nhạt,Hoa súng,xanh nhạt,25,bông,54472,expired,7,expired
+INV0043,F013,Hoa súng tím,Hoa súng,tím,33,bông,59588,fresh,1,available
+INV0044,F013,Hoa súng trắng,Hoa súng,trắng,15,bông,44725,fresh,1,available
+INV0045,F013,Hoa súng hồng,Hoa súng,hồng,21,bông,31378,expired,9,expired
+INV0046,F014,Hoa mai vàng,Hoa mai,vàng,0,cành,79305,expired,10,out_of_stock
+INV0047,F015,Hoa đào hồng,Hoa đào,hồng,2,cành,113309,fresh,1,low_stock
+INV0048,F015,Hoa đào trắng,Hoa đào,trắng,32,cành,101195,fresh,4,available
+INV0049,F016,Hoa lay ơn hồng,Hoa lay ơn,hồng,30,cành,23338,fresh,3,available
+INV0050,F016,Hoa lay ơn cam,Hoa lay ơn,cam,6,cành,13176,expired,10,expired
+INV0051,F016,Hoa lay ơn vàng,Hoa lay ơn,vàng,27,cành,21609,near_expiry,6,near_expiry
+INV0052,F016,Hoa lay ơn trắng,Hoa lay ơn,trắng,26,cành,25303,fresh,0,available
+INV0053,F016,Hoa lay ơn đỏ,Hoa lay ơn,đỏ,6,cành,11986,near_expiry,6,near_expiry
+INV0054,F017,Hoa violet tím,Hoa violet,tím,12,bó,27573,expired,7,expired
+INV0055,F017,Hoa violet trắng,Hoa violet,trắng,8,bó,23824,fresh,2,available
+INV0056,F017,Hoa violet xanh tím,Hoa violet,xanh tím,17,bó,25159,fresh,3,available
+INV0057,F018,Hoa oải hương tím,Hoa oải hương,tím,35,bó,36416,fresh,0,available
+INV0058,F019,Hoa loa kèn trắng,Hoa loa kèn,trắng,15,cành,40899,near_expiry,6,near_expiry
+INV0059,F020,Hoa dạ yến thảo đỏ,Hoa dạ yến thảo,đỏ,10,bó,22418,fresh,0,available
+INV0060,F020,Hoa dạ yến thảo tím,Hoa dạ yến thảo,tím,24,bó,18690,expired,7,expired
+INV0061,F020,Hoa dạ yến thảo hồng,Hoa dạ yến thảo,hồng,18,bó,23861,expired,8,expired
+INV0062,F020,Hoa dạ yến thảo trắng,Hoa dạ yến thảo,trắng,31,bó,15072,fresh,3,available
+INV0063,F021,Hoa păng xê vàng,Hoa păng xê,vàng,3,bó,11643,expired,9,low_stock
+INV0064,F021,Hoa păng xê tím,Hoa păng xê,tím,30,bó,26477,expired,8,expired
+INV0065,F021,Hoa păng xê trắng,Hoa păng xê,trắng,10,bó,11863,expired,8,expired
+INV0066,F021,Hoa păng xê cam,Hoa păng xê,cam,5,bó,16089,fresh,1,available
+INV0067,F022,Hoa cát tường tím,Hoa cát tường,tím,7,cành,67334,fresh,3,available
+INV0068,F022,Hoa cát tường vàng nhạt,Hoa cát tường,vàng nhạt,37,cành,68962,fresh,0,available
+INV0069,F023,Hoa trạng nguyên trắng,Hoa trạng nguyên,trắng,16,bông,43386,expired,10,expired
+INV0070,F023,Hoa trạng nguyên hồng,Hoa trạng nguyên,hồng,20,bông,45642,fresh,4,available
+INV0071,F024,Hoa hải đường đỏ,Hoa hải đường,đỏ,20,cành,34754,fresh,0,available
+INV0072,F024,Hoa hải đường hồng,Hoa hải đường,hồng,29,cành,66896,fresh,1,available
+INV0073,F024,Hoa hải đường trắng,Hoa hải đường,trắng,4,cành,65234,fresh,3,available
+INV0074,F025,Hoa trà trắng,Hoa trà,trắng,15,cành,54217,fresh,4,available
+INV0075,F025,Hoa trà hồng,Hoa trà,hồng,10,cành,58716,expired,8,expired
+INV0076,F025,Hoa trà đỏ,Hoa trà,đỏ,19,cành,64664,fresh,0,available
+INV0077,F026,Hoa sim tím,Hoa sim,tím,8,cành,18666,fresh,1,available
+INV0078,F027,Hoa bằng lăng tím,Hoa bằng lăng,tím,17,cành,19232,expired,9,expired
+INV0079,F028,Hoa phượng cam đỏ,Hoa phượng,cam đỏ,40,cành,18650,expired,8,expired
+INV0080,F028,Hoa phượng đỏ,Hoa phượng,đỏ,31,cành,18228,fresh,0,available
+INV0081,F029,Hoa giấy trắng,Hoa giấy,trắng,2,bó,10116,near_expiry,5,low_stock
+INV0082,F029,Hoa giấy cam,Hoa giấy,cam,8,bó,18583,fresh,2,available
+INV0083,F030,Hoa quỳnh trắng,Hoa quỳnh,trắng,35,bông,71267,fresh,1,available
+INV0084,F031,Hoa nhài trắng,Hoa nhài,trắng,34,bông,11180,near_expiry,5,near_expiry
+INV0085,F032,Hoa ngọc lan vàng nhạt,Hoa ngọc lan,vàng nhạt,2,bông,50202,near_expiry,5,low_stock
+INV0086,F032,Hoa ngọc lan trắng,Hoa ngọc lan,trắng,2,bông,53449,fresh,3,low_stock
+INV0087,F033,Hoa mộc lan tím,Hoa mộc lan,tím,35,bông,123264,expired,9,expired
+INV0088,F033,Hoa mộc lan trắng,Hoa mộc lan,trắng,9,bông,101029,fresh,2,available
+INV0089,F033,Hoa mộc lan hồng,Hoa mộc lan,hồng,11,bông,124040,fresh,0,available
+INV0090,F034,Hoa dâm bụt vàng,Hoa dâm bụt,vàng,17,bông,15216,fresh,1,available
+INV0091,F034,Hoa dâm bụt hồng,Hoa dâm bụt,hồng,24,bông,11268,expired,7,expired
+INV0092,F034,Hoa dâm bụt đỏ,Hoa dâm bụt,đỏ,14,bông,16539,expired,7,expired
+INV0093,F035,Hoa anh túc hồng,Hoa anh túc,hồng,12,bông,56113,near_expiry,5,near_expiry
+INV0094,F035,Hoa anh túc đỏ,Hoa anh túc,đỏ,17,bông,34549,fresh,4,available
+INV0095,F035,Hoa anh túc trắng,Hoa anh túc,trắng,22,bông,63384,near_expiry,6,near_expiry
+INV0096,F035,Hoa anh túc cam,Hoa anh túc,cam,34,bông,51702,fresh,0,available
+INV0097,F036,Hoa thủy tiên trắng,Hoa thủy tiên,trắng,37,cành,104795,fresh,0,available
+INV0098,F036,Hoa thủy tiên vàng,Hoa thủy tiên,vàng,6,cành,148193,near_expiry,6,near_expiry
+INV0099,F037,Hoa mimosa vàng,Hoa mimosa,vàng,27,bó,69728,expired,8,expired
+INV0100,F038,Hoa cẩm tú cầu trắng,Hoa cẩm tú cầu,trắng,12,cành,103386,fresh,0,available
+INV0101,F038,Hoa cẩm tú cầu hồng,Hoa cẩm tú cầu,hồng,27,cành,70221,expired,8,expired
+INV0102,F039,Hoa xác pháo cam,Hoa xác pháo,cam,21,bó,20286,expired,10,expired
+INV0103,F039,Hoa xác pháo vàng,Hoa xác pháo,vàng,7,bó,19840,expired,8,expired
+INV0104,F039,Hoa xác pháo đỏ,Hoa xác pháo,đỏ,19,bó,23382,near_expiry,5,near_expiry
+INV0105,F040,Hoa bồ công anh trắng,Hoa bồ công anh,trắng,12,cành,23777,expired,10,expired
+INV0106,F040,Hoa bồ công anh vàng,Hoa bồ công anh,vàng,24,cành,15702,expired,9,expired
+INV0107,F041,Hoa lưu ly tím nhạt,Hoa lưu ly,tím nhạt,19,bó,19401,fresh,3,available
+INV0108,F041,Hoa lưu ly xanh,Hoa lưu ly,xanh,27,bó,29004,expired,9,expired
+INV0109,F042,Hoa loa kèn đỏ hồng,Hoa loa kèn đỏ,hồng,13,cành,137000,expired,7,expired
+INV0110,F042,Hoa loa kèn đỏ trắng,Hoa loa kèn đỏ,trắng,10,cành,81114,fresh,4,available
+INV0111,F042,Hoa loa kèn đỏ đỏ,Hoa loa kèn đỏ,đỏ,32,cành,113933,fresh,1,available
+INV0112,F043,Hoa hồng môn trắng,Hoa hồng môn,trắng,12,cành,39656,fresh,0,available
+INV0113,F043,Hoa hồng môn hồng,Hoa hồng môn,hồng,2,cành,46046,expired,7,low_stock
+INV0114,F043,Hoa hồng môn đỏ,Hoa hồng môn,đỏ,39,cành,34772,expired,7,expired
+INV0115,F044,Hoa lan vũ nữ tím,Hoa lan vũ nữ,tím,25,cành,45989,fresh,2,available
+INV0116,F044,Hoa lan vũ nữ trắng,Hoa lan vũ nữ,trắng,0,cành,36985,near_expiry,6,out_of_stock
+INV0117,F044,Hoa lan vũ nữ cam,Hoa lan vũ nữ,cam,14,cành,41526,expired,8,expired
+INV0118,F044,Hoa lan vũ nữ vàng,Hoa lan vũ nữ,vàng,29,cành,33291,expired,8,expired
+INV0119,F045,Hoa lan hoàng thảo tím,Hoa lan hoàng thảo,tím,29,cành,64808,expired,8,expired
+INV0120,F045,Hoa lan hoàng thảo trắng,Hoa lan hoàng thảo,trắng,38,cành,50794,expired,7,expired
+INV0121,F045,Hoa lan hoàng thảo hồng,Hoa lan hoàng thảo,hồng,39,cành,63081,near_expiry,6,near_expiry
+INV0122,F046,Hoa cúc họa mi trắng,Hoa cúc họa mi,trắng,28,cành,18493,fresh,3,available
+INV0123,F046,Hoa cúc họa mi vàng nhạt,Hoa cúc họa mi,vàng nhạt,40,cành,19086,expired,8,expired
+INV0124,F047,Hoa cúc tần vàng,Hoa cúc tần,vàng,28,bó,12538,fresh,4,available
+INV0125,F047,Hoa cúc tần trắng,Hoa cúc tần,trắng,15,bó,18903,near_expiry,5,near_expiry
+INV0126,F048,Hoa mào gà đỏ,Hoa mào gà,đỏ,24,cành,15007,fresh,3,available
+INV0127,F048,Hoa mào gà hồng,Hoa mào gà,hồng,4,cành,23594,near_expiry,6,near_expiry
+INV0128,F048,Hoa mào gà cam,Hoa mào gà,cam,21,cành,27780,expired,7,expired
+INV0129,F048,Hoa mào gà vàng,Hoa mào gà,vàng,26,cành,12040,fresh,3,available
+INV0130,F049,Hoa mười giờ cam,Hoa mười giờ,cam,0,bó,21526,fresh,4,out_of_stock
+INV0131,F049,Hoa mười giờ hồng,Hoa mười giờ,hồng,24,bó,23730,expired,8,expired
+INV0132,F049,Hoa mười giờ vàng,Hoa mười giờ,vàng,34,bó,29767,fresh,3,available
+INV0133,F049,Hoa mười giờ đỏ,Hoa mười giờ,đỏ,31,bó,17190,fresh,4,available
+INV0134,F049,Hoa mười giờ trắng,Hoa mười giờ,trắng,27,bó,25913,fresh,0,available
+INV0135,F050,Hoa dừa cạn trắng,Hoa dừa cạn,trắng,29,bó,14182,expired,9,expired
+INV0136,F050,Hoa dừa cạn tím,Hoa dừa cạn,tím,34,bó,10883,near_expiry,6,near_expiry
+INV0137,F050,Hoa dừa cạn hồng,Hoa dừa cạn,hồng,37,bó,28493,expired,10,expired

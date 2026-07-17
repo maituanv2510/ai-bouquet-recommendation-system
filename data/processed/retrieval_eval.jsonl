@@ -1,0 +1,80 @@
+{"query": "Gợi ý giúp mình bó hoa tặng mẹ nhân ngày của Mẹ, thể hiện sự biết ơn", "expected_flowers": ["Cẩm chướng", "Lan hồ điệp"]}
+{"query": "Mình muốn tìm hoa tặng mẹ để bày tỏ lòng biết ơn", "expected_flowers": ["Cẩm chướng", "Cát tường", "Lan hồ điệp"]}
+{"query": "Hoa nào thể hiện được sự biết ơn khi tặng mẹ nhân dịp 20/10?", "expected_flowers": ["Hoa hồng", "Lan hồ điệp"]}
+{"query": "Có hoa nào phù hợp để tặng mẹ, mang ý nghĩa biết ơn công lao sinh thành không?", "expected_flowers": ["Hoa hồng", "Lan hồ điệp"]}
+{"query": "Tìm bó hoa tặng mẹ mang thông điệp biết ơn chân thành nhất", "expected_flowers": ["Hoa hồng", "Cát tường", "Lan hồ điệp"]}
+{"query": "Cho mình xin gợi ý hoa tặng mẹ, ý nghĩa biết ơn và trân trọng", "expected_flowers": ["Hoa hồng", "Lan hồ điệp"]}
+{"query": "Mình cần bó hoa tặng mẹ dịp sinh nhật, thể hiện lòng biết ơn sâu sắc", "expected_flowers": ["Lan hồ điệp", "Hoa hồng", "Cẩm chướng"]}
+{"query": "Tìm hoa tặng mẹ, muốn nói lời cảm ơn vì mẹ đã vất vả nuôi con", "expected_flowers": ["Lan hồ điệp", "Cẩm chướng"]}
+{"query": "Gợi ý hoa tặng bạn nhân dịp sinh nhật, mang ý nghĩa chân thành", "expected_flowers": ["Cẩm chướng", "Cúc tana"]}
+{"query": "Tìm bó hoa tặng bạn, muốn gửi gắm tình bạn chân thành bền lâu", "expected_flowers": ["Cẩm chướng", "Hướng dương"]}
+{"query": "Mình muốn tặng hoa cho bạn thân, thể hiện tình cảm chân thành", "expected_flowers": ["Cúc tana", "Cẩm chướng", "Hướng dương"]}
+{"query": "Có hoa nào phù hợp để tặng bạn bè, thể hiện sự chân thành không?", "expected_flowers": ["Hướng dương", "Cúc tana"]}
+{"query": "Cho mình xin gợi ý hoa tặng bạn, mang thông điệp chân thành và vui vẻ", "expected_flowers": ["Cúc tana", "Hướng dương"]}
+{"query": "Mình cần hoa tặng bạn để chúc mừng, nhưng muốn giữ sự chân thành giản dị", "expected_flowers": ["Hướng dương", "Đồng tiền"]}
+{"query": "Tìm hoa tặng bạn bè lâu năm, thể hiện tấm lòng chân thành", "expected_flowers": ["Cẩm chướng", "Cúc tana", "Đồng tiền"]}
+{"query": "Hoa nào hợp để tặng bạn nữ, thể hiện tình bạn chân thành?", "expected_flowers": ["Cúc tana", "Đồng tiền"]}
+{"query": "Tìm bó hoa tặng người yêu, muốn thể hiện tình yêu lãng mạn sâu đậm", "expected_flowers": ["Hoa ly", "Tulip"]}
+{"query": "Hoa nào hợp để tặng người yêu nhân kỷ niệm ngày quen nhau, thật lãng mạn?", "expected_flowers": ["Tulip", "Baby's breath", "Hoa ly"]}
+{"query": "Có hoa nào phù hợp để tỏ tình, mang ý nghĩa lãng mạn không?", "expected_flowers": ["Tulip", "Hoa hồng"]}
+{"query": "Mình muốn tặng hoa cho người yêu, thể hiện sự lãng mạn", "expected_flowers": ["Hoa ly", "Tulip", "Hoa hồng"]}
+{"query": "Gợi ý hoa tặng người yêu nhân dịp Valentine, mang phong cách lãng mạn", "expected_flowers": ["Baby's breath", "Hoa hồng"]}
+{"query": "Mình cần hoa tặng người yêu để cầu hôn, mang không khí lãng mạn", "expected_flowers": ["Hoa ly", "Baby's breath", "Tulip"]}
+{"query": "Cho mình xin gợi ý hoa tặng bạn gái, mang cảm giác ngọt ngào lãng mạn", "expected_flowers": ["Baby's breath", "Hoa hồng"]}
+{"query": "Gợi ý hoa chúc mừng khai trương cửa hàng, thể hiện tài lộc may mắn", "expected_flowers": ["Đồng tiền", "Lan hồ điệp", "Hoa ly"]}
+{"query": "Hoa nào hợp để tặng khai trương chi nhánh mới, mang ý nghĩa may mắn?", "expected_flowers": ["Lan hồ điệp", "Hoa ly", "Đồng tiền"]}
+{"query": "Cho mình xin gợi ý lẵng hoa khai trương quán, thể hiện sự may mắn thịnh vượng", "expected_flowers": ["Hướng dương", "Đồng tiền"]}
+{"query": "Có hoa nào phù hợp để tặng khai trương công ty, mang lại may mắn không?", "expected_flowers": ["Lan hồ điệp", "Hướng dương", "Đồng tiền"]}
+{"query": "Tìm hoa chúc mừng khai trương, muốn gửi gắm lời chúc phát tài may mắn", "expected_flowers": ["Đồng tiền", "Hoa ly", "Lan hồ điệp"]}
+{"query": "Mình cần hoa tặng đối tác nhân dịp khai trương, biểu tượng cho may mắn", "expected_flowers": ["Đồng tiền", "Hoa ly"]}
+{"query": "Mình cần lẵng hoa khai trương, mang ý nghĩa may mắn", "expected_flowers": ["Lan hồ điệp", "Hướng dương", "Đồng tiền"]}
+{"query": "Gợi ý hoa chúc mừng tốt nghiệp, mang ý nghĩa hy vọng và khởi đầu mới", "expected_flowers": ["Cát tường", "Đồng tiền"]}
+{"query": "Tìm bó hoa tặng lễ tốt nghiệp, muốn gửi lời chúc tràn đầy hy vọng", "expected_flowers": ["Tulip", "Đồng tiền"]}
+{"query": "Mình muốn tặng hoa mừng tốt nghiệp, thể hiện niềm hy vọng vào tương lai", "expected_flowers": ["Hướng dương", "Cát tường"]}
+{"query": "Có hoa nào phù hợp để tặng bạn tốt nghiệp đại học, mang niềm hy vọng không?", "expected_flowers": ["Đồng tiền", "Hướng dương", "Cát tường"]}
+{"query": "Hoa nào hợp để tặng em gái vừa tốt nghiệp, thể hiện niềm tin và hy vọng?", "expected_flowers": ["Cát tường", "Hướng dương", "Đồng tiền"]}
+{"query": "Cho mình xin gợi ý hoa tặng cô giáo dịp tốt nghiệp, mang ý nghĩa hy vọng", "expected_flowers": ["Hướng dương", "Đồng tiền"]}
+{"query": "Mình cần hoa chúc mừng tốt nghiệp, biểu tượng cho hy vọng vào con đường mới", "expected_flowers": ["Hướng dương", "Cát tường", "Đồng tiền"]}
+{"query": "Gợi ý hoa xin lỗi bạn thân, mang thông điệp chân thành và hối lỗi", "expected_flowers": ["Baby's breath", "Cát tường"]}
+{"query": "Hoa nào hợp để tặng khi xin lỗi đồng nghiệp, thể hiện sự chân thành?", "expected_flowers": ["Hoa hồng", "Cát tường", "Baby's breath"]}
+{"query": "Tìm hoa tặng để làm hòa, muốn gửi lời xin lỗi thật chân thành", "expected_flowers": ["Hoa hồng", "Cẩm chướng", "Cát tường"]}
+{"query": "Mình cần hoa xin lỗi mẹ vì đã cãi lời, mang thông điệp chân thành", "expected_flowers": ["Cẩm chướng", "Baby's breath"]}
+{"query": "Cho mình xin gợi ý hoa xin lỗi vợ/chồng, mang ý nghĩa chân thành sâu sắc", "expected_flowers": ["Baby's breath", "Cát tường"]}
+{"query": "Có hoa nào phù hợp để xin lỗi, thể hiện tấm lòng chân thành không?", "expected_flowers": ["Cẩm chướng", "Hoa hồng"]}
+{"query": "Mình muốn tặng hoa xin lỗi người yêu, thể hiện sự chân thành", "expected_flowers": ["Baby's breath", "Cẩm chướng"]}
+{"query": "Mình muốn tặng hoa cảm ơn cô giáo, thể hiện sự trân trọng", "expected_flowers": ["Hoa ly", "Lan hồ điệp"]}
+{"query": "Có hoa nào phù hợp để cảm ơn khách hàng, thể hiện sự trân trọng không?", "expected_flowers": ["Hoa ly", "Cát tường", "Lan hồ điệp"]}
+{"query": "Mình cần hoa cảm ơn bác sĩ đã chữa bệnh, mang ý nghĩa trân trọng", "expected_flowers": ["Cẩm chướng", "Cát tường"]}
+{"query": "Gợi ý hoa cảm ơn đồng nghiệp, mang ý nghĩa trân trọng chân thành", "expected_flowers": ["Lan hồ điệp", "Hoa ly", "Cát tường"]}
+{"query": "Tìm hoa tặng để nói lời cảm ơn, muốn gửi gắm sự trân trọng sâu sắc", "expected_flowers": ["Cẩm chướng", "Lan hồ điệp", "Cát tường"]}
+{"query": "Hoa nào hợp để tặng cảm ơn người đã giúp đỡ mình, thể hiện sự trân trọng?", "expected_flowers": ["Cát tường", "Lan hồ điệp"]}
+{"query": "Cho mình xin gợi ý hoa cảm ơn sếp, mang thông điệp trân trọng và biết ơn", "expected_flowers": ["Cẩm chướng", "Cát tường", "Lan hồ điệp"]}
+{"query": "Gợi ý hoa thăm người ốm, thể hiện sự động viên và chúc mau khỏe", "expected_flowers": ["Cẩm chướng", "Hướng dương", "Đồng tiền"]}
+{"query": "Cho mình xin gợi ý hoa thăm bệnh đồng nghiệp, mang thông điệp động viên", "expected_flowers": ["Hướng dương", "Cẩm chướng", "Đồng tiền"]}
+{"query": "Tìm hoa tặng người thân đang nằm viện, muốn động viên tinh thần họ", "expected_flowers": ["Cúc tana", "Hướng dương"]}
+{"query": "Mình cần hoa thăm ông bà đang dưỡng bệnh, mang ý nghĩa động viên sức khỏe", "expected_flowers": ["Cẩm chướng", "Cúc tana", "Hướng dương"]}
+{"query": "Hoa nào hợp để tặng khi thăm bệnh bạn bè, thể hiện sự động viên lạc quan?", "expected_flowers": ["Hướng dương", "Cẩm chướng", "Cúc tana"]}
+{"query": "Mình muốn mua hoa thăm bệnh, mang ý nghĩa động viên tinh thần", "expected_flowers": ["Cẩm chướng", "Cúc tana"]}
+{"query": "Có hoa nào phù hợp để thăm bệnh viện, mang lại sự động viên không?", "expected_flowers": ["Đồng tiền", "Cúc tana", "Cẩm chướng"]}
+{"query": "Có bó hoa nào mang cảm giác nhẹ nhàng, thanh thoát không?", "expected_flowers": ["Baby's breath", "Cẩm chướng", "Lavender"]}
+{"query": "Gợi ý hoa phong cách nhẹ nhàng, tinh tế cho buổi hẹn hò", "expected_flowers": ["Baby's breath", "Cát tường"]}
+{"query": "Tìm hoa trang trí tiệc trà theo tone nhẹ nhàng, thanh lịch", "expected_flowers": ["Lavender", "Baby's breath"]}
+{"query": "Mình cần bó hoa quà tặng mang phong cách nhẹ nhàng, tối giản", "expected_flowers": ["Lavender", "Cẩm chướng"]}
+{"query": "Mình muốn tìm bó hoa mang tone nhẹ nhàng, dịu dàng", "expected_flowers": ["Lavender", "Cát tường"]}
+{"query": "Hoa nào hợp để cắm bình theo tone nhẹ nhàng, pastel dịu dàng?", "expected_flowers": ["Baby's breath", "Lavender"]}
+{"query": "Tìm hoa trang trí bàn làm việc theo tone nhẹ nhàng, dịu mắt", "expected_flowers": ["Cát tường", "Baby's breath", "Lavender"]}
+{"query": "Cho mình xin gợi ý hoa cưới phong cách nhẹ nhàng, mộc mạc", "expected_flowers": ["Cát tường", "Lavender"]}
+{"query": "Gợi ý hoa phong cách rực rỡ, nổi bật cho tiệc sinh nhật", "expected_flowers": ["Cẩm tú cầu", "Tulip"]}
+{"query": "Hoa nào hợp để cắm bình theo tone rực rỡ, nhiều màu sắc?", "expected_flowers": ["Hướng dương", "Tulip"]}
+{"query": "Có bó hoa nào mang cảm giác rực rỡ, tràn đầy năng lượng không?", "expected_flowers": ["Tulip", "Hướng dương"]}
+{"query": "Tìm hoa trang trí sự kiện theo tone rực rỡ, bắt mắt", "expected_flowers": ["Hướng dương", "Cẩm tú cầu", "Đồng tiền"]}
+{"query": "Mình cần bó hoa quà tặng mang phong cách rực rỡ, vui tươi", "expected_flowers": ["Đồng tiền", "Cẩm tú cầu", "Tulip"]}
+{"query": "Mình muốn tìm bó hoa mang tone rực rỡ, tươi sáng", "expected_flowers": ["Tulip", "Cẩm tú cầu"]}
+{"query": "Cho mình xin gợi ý hoa mừng lễ hội phong cách rực rỡ, sặc sỡ", "expected_flowers": ["Đồng tiền", "Cẩm tú cầu"]}
+{"query": "Mình muốn tìm bó hoa mang tone sang trọng, quý phái", "expected_flowers": ["Hoa hồng", "Lan hồ điệp"]}
+{"query": "Mình cần bó hoa quà tặng mang phong cách sang trọng, cao cấp", "expected_flowers": ["Tulip", "Hoa ly", "Lan hồ điệp"]}
+{"query": "Cho mình xin gợi ý hoa tặng đối tác phong cách sang trọng, tinh tế", "expected_flowers": ["Tulip", "Hoa ly"]}
+{"query": "Gợi ý hoa phong cách sang trọng cho sự kiện công ty", "expected_flowers": ["Lan hồ điệp", "Hoa ly"]}
+{"query": "Tìm hoa trang trí tiệc cưới theo tone sang trọng, lộng lẫy", "expected_flowers": ["Hoa hồng", "Lan hồ điệp"]}
+{"query": "Có bó hoa nào mang cảm giác sang trọng, đẳng cấp không?", "expected_flowers": ["Tulip", "Hoa hồng", "Lan hồ điệp"]}
+{"query": "Hoa nào hợp để cắm bình theo tone sang trọng, quý phái?", "expected_flowers": ["Lan hồ điệp", "Hoa hồng"]}

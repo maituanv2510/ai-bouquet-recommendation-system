@@ -1,0 +1,52 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Outputs
+outputs/
+runs/
+wandb/
+
+# Qdrant local storage
+qdrant_storage/
+
+# Model checkpoints / adapters
+checkpoint-*/
+qwen2.5-3b-bouquet-extractor/
+outputs/qwen2.5-3b-bouquet-extractor/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+hf_cache/
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# OS
+.DS_Store
+Thumbs.db
