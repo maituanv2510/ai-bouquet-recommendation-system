@@ -338,7 +338,16 @@ data/processed/e2e_chatbot_test_cases.json
 scripts/test_e2e_chatbot.py
 scripts/analyze_e2e_failures.py
 ```
+Evaluation reports are provided in the `reports/` directory:
 
+```text
+reports/
+├── e2e_chatbot_test_report.json
+├── e2e_failed_cases.json
+├── extraction_metrics.json
+├── recommendation_sample_result.json
+└── sample_predictions.jsonl
+These files contain saved evaluation artifacts from model extraction, recommendation testing, and end-to-end chatbot testing.
 ---
 
 ## Installation
