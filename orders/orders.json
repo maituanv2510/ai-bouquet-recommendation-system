@@ -1,0 +1,1362 @@
+[
+  {
+    "order_id": "ORD-20260718-0001",
+    "customer_id": "CUS-0001",
+    "customer": {
+      "name": "Thái Đức Cường",
+      "phone": "0829092076",
+      "address": "Thạch Hòa Thạch Thất Hòa Lạc"
+    },
+    "bouquet": {
+      "occasion": "sinh nhật",
+      "recipient": "mẹ",
+      "budget": 850000,
+      "budget_min": 700000,
+      "budget_max": 1000000,
+      "budget_type": "range",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu phù hợp dịp sinh nhật, hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607180001",
+      "amount": 829000,
+      "transfer_content": "BQ202607180001 Thái Đức Cường",
+      "payment_status": "paid",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "preparing",
+    "created_at": "2026-07-18 09:36:16",
+    "updated_at": "2026-07-18 09:47:58"
+  },
+  {
+    "order_id": "ORD-20260719-0002",
+    "customer_id": "CUS-0002",
+    "customer": {
+      "name": "Nguyễn Viết Anh",
+      "phone": "0866660251",
+      "address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An"
+    },
+    "bouquet": {
+      "occasion": "Valentine",
+      "recipient": "người yêu",
+      "budget": 700000,
+      "budget_min": 700000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [
+        "cẩm tú cầu",
+        "hoa hồng",
+        "baby trắng",
+        "baby",
+        "cát tường",
+        "lá bạc"
+      ],
+      "flower_avoidance": [],
+      "color_tone": [
+        "xanh",
+        "hồng",
+        "trắng"
+      ],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính, phù hợp dịp Valentine, hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607190002",
+      "amount": 829000,
+      "transfer_content": "BQ202607190002 Nguyễn Viết Anh",
+      "payment_status": "paid",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "preparing",
+    "created_at": "2026-07-19 19:15:39",
+    "updated_at": "2026-07-19 19:24:32"
+  },
+  {
+    "order_id": "ORD-20260719-0003",
+    "customer_id": "CUS-0002",
+    "customer": {
+      "name": "Nguyễn Viết Anh",
+      "phone": "0866660251",
+      "address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An"
+    },
+    "bouquet": {
+      "occasion": "Valentine",
+      "recipient": "người yêu",
+      "budget": 700000,
+      "budget_min": 700000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607190003",
+      "amount": 829000,
+      "transfer_content": "BQ202607190003 Nguyễn Viết Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:42:52",
+    "updated_at": "2026-07-19 19:42:52"
+  },
+  {
+    "order_id": "ORD-20260719-0004",
+    "customer_id": "CUS-0003",
+    "customer": {
+      "name": "Trần Minh Anh",
+      "phone": "0912345678",
+      "address": "Cầu Giấy, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "sinh nhật",
+      "recipient": "mẹ",
+      "budget": 500000,
+      "budget_min": null,
+      "budget_max": 500000,
+      "budget_type": "maximum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "small-medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 2,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu phù hợp dịp sinh nhật, hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 3,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 401000
+    },
+    "payment": {
+      "payment_code": "BQ202607190004",
+      "amount": 401000,
+      "transfer_content": "BQ202607190004 Trần Minh Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:43:59",
+    "updated_at": "2026-07-19 19:43:59"
+  },
+  {
+    "order_id": "ORD-20260719-0005",
+    "customer_id": "CUS-0004",
+    "customer": {
+      "name": "Lê Hoàng Nam",
+      "phone": "0987654321",
+      "address": "Thanh Xuân, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "20/11",
+      "recipient": "thầy cô",
+      "budget": 600000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "baby trắng",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "baby trắng hợp để tặng thầy cô."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "hướng dương",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 18000,
+          "reason": "Hướng dương tạo cảm giác tươi sáng, tích cực, phù hợp với dịp chúc mừng hoặc tốt nghiệp."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 4,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 505000
+    },
+    "payment": {
+      "payment_code": "BQ202607190005",
+      "amount": 505000,
+      "transfer_content": "BQ202607190005 Lê Hoàng Nam",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:45:06",
+    "updated_at": "2026-07-19 19:45:06"
+  },
+  {
+    "order_id": "ORD-20260719-0006",
+    "customer_id": "CUS-0005",
+    "customer": {
+      "name": "Phạm Quang Huy",
+      "phone": "0901111222",
+      "address": "Nam Từ Liêm, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "8/3",
+      "recipient": "mẹ",
+      "budget": 450000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "small-medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 2,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 3,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 401000
+    },
+    "payment": {
+      "payment_code": "BQ202607190006",
+      "amount": 401000,
+      "transfer_content": "BQ202607190006 Phạm Quang Huy",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:46:13",
+    "updated_at": "2026-07-19 19:46:13"
+  },
+  {
+    "order_id": "ORD-20260719-0007",
+    "customer_id": "CUS-0006",
+    "customer": {
+      "name": "Đỗ Minh Quân",
+      "phone": "0933333444",
+      "address": "Hà Đông, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "20/10",
+      "recipient": "người yêu",
+      "budget": 800000,
+      "budget_min": 800000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607190007",
+      "amount": 829000,
+      "transfer_content": "BQ202607190007 Đỗ Minh Quân",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:47:20",
+    "updated_at": "2026-07-19 19:47:20"
+  },
+  {
+    "order_id": "ORD-20260719-0008",
+    "customer_id": "CUS-0007",
+    "customer": {
+      "name": "Công ty Minh Long",
+      "phone": "0909999888",
+      "address": "Quận 1, TP HCM"
+    },
+    "bouquet": {
+      "occasion": "khai trương",
+      "recipient": "khách hàng",
+      "budget": 1000000,
+      "budget_min": 1000000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "premium",
+      "bouquet_items": [
+        {
+          "flower_name": "cát tường",
+          "role": "main",
+          "quantity": 6,
+          "unit_price": 22000,
+          "reason": "cát tường phù hợp dịp khai trương."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "hướng dương",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 18000,
+          "reason": "Hướng dương tạo cảm giác tươi sáng, tích cực, phù hợp với dịp chúc mừng hoặc tốt nghiệp."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 8,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 962000
+    },
+    "payment": {
+      "payment_code": "BQ202607190008",
+      "amount": 962000,
+      "transfer_content": "BQ202607190008 Công ty Minh Long",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:53:43",
+    "updated_at": "2026-07-19 19:53:43"
+  },
+  {
+    "order_id": "ORD-20260719-0009",
+    "customer_id": "CUS-0008",
+    "customer": {
+      "name": "Hoàng Anh",
+      "phone": "0922222333",
+      "address": "Ba Đình, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "xin lỗi",
+      "recipient": "người yêu",
+      "budget": 650000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 2,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 570000
+    },
+    "payment": {
+      "payment_code": "BQ202607190009",
+      "amount": 570000,
+      "transfer_content": "BQ202607190009 Hoàng Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:54:57",
+    "updated_at": "2026-07-19 19:54:57"
+  },
+  {
+    "order_id": "ORD-20260719-0010",
+    "customer_id": "CUS-0009",
+    "customer": {
+      "name": "Nguyễn Thu Hà",
+      "phone": "0911111222",
+      "address": "Đống Đa, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "sinh nhật",
+      "recipient": "mẹ",
+      "budget": 600000,
+      "budget_min": null,
+      "budget_max": 600000,
+      "budget_type": "maximum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu phù hợp dịp sinh nhật, hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 1,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 1,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 460000
+    },
+    "payment": {
+      "payment_code": "BQ202607190010",
+      "amount": 460000,
+      "transfer_content": "BQ202607190010 Nguyễn Thu Hà",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 19:56:11",
+    "updated_at": "2026-07-19 19:56:11"
+  },
+  {
+    "order_id": "ORD-20260719-0011",
+    "customer_id": "CUS-0010",
+    "customer": {
+      "name": "Nguyễn Hoàng Anh",
+      "phone": "0982590829",
+      "address": "số 58 Nguyễn Đức Cảnh , Vinh, Nghệ An"
+    },
+    "bouquet": {
+      "occasion": "Tết",
+      "recipient": "mẹ",
+      "budget": 700000,
+      "budget_min": null,
+      "budget_max": 700000,
+      "budget_type": "maximum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 1,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 560000
+    },
+    "payment": {
+      "payment_code": "BQ202607190011",
+      "amount": 560000,
+      "transfer_content": "BQ202607190011 Nguyễn Hoàng Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:18:40",
+    "updated_at": "2026-07-19 21:18:40"
+  },
+  {
+    "order_id": "ORD-20260719-0012",
+    "customer_id": "CUS-0002",
+    "customer": {
+      "name": "Nguyễn Viết Anh",
+      "phone": "0866660251",
+      "address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An"
+    },
+    "bouquet": {
+      "occasion": "Valentine",
+      "recipient": "người yêu",
+      "budget": 700000,
+      "budget_min": 700000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607190012",
+      "amount": 829000,
+      "transfer_content": "BQ202607190012 Nguyễn Viết Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:23:25",
+    "updated_at": "2026-07-19 21:23:25"
+  },
+  {
+    "order_id": "ORD-20260719-0013",
+    "customer_id": "CUS-0003",
+    "customer": {
+      "name": "Trần Minh Anh",
+      "phone": "0912345678",
+      "address": "Cầu Giấy, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "sinh nhật",
+      "recipient": "mẹ",
+      "budget": 500000,
+      "budget_min": null,
+      "budget_max": 500000,
+      "budget_type": "maximum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "small-medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 2,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu phù hợp dịp sinh nhật, hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 3,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 401000
+    },
+    "payment": {
+      "payment_code": "BQ202607190013",
+      "amount": 401000,
+      "transfer_content": "BQ202607190013 Trần Minh Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:24:36",
+    "updated_at": "2026-07-19 21:24:36"
+  },
+  {
+    "order_id": "ORD-20260719-0014",
+    "customer_id": "CUS-0004",
+    "customer": {
+      "name": "Lê Hoàng Nam",
+      "phone": "0987654321",
+      "address": "Thanh Xuân, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "20/11",
+      "recipient": "thầy cô",
+      "budget": 600000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "baby trắng",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "baby trắng hợp để tặng thầy cô."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "hướng dương",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 18000,
+          "reason": "Hướng dương tạo cảm giác tươi sáng, tích cực, phù hợp với dịp chúc mừng hoặc tốt nghiệp."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 4,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 505000
+    },
+    "payment": {
+      "payment_code": "BQ202607190014",
+      "amount": 505000,
+      "transfer_content": "BQ202607190014 Lê Hoàng Nam",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:25:46",
+    "updated_at": "2026-07-19 21:25:46"
+  },
+  {
+    "order_id": "ORD-20260719-0015",
+    "customer_id": "CUS-0005",
+    "customer": {
+      "name": "Phạm Quang Huy",
+      "phone": "0901111222",
+      "address": "Nam Từ Liêm, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "8/3",
+      "recipient": "mẹ",
+      "budget": 450000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "small-medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 2,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 3,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 3,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 401000
+    },
+    "payment": {
+      "payment_code": "BQ202607190015",
+      "amount": 401000,
+      "transfer_content": "BQ202607190015 Phạm Quang Huy",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:26:54",
+    "updated_at": "2026-07-19 21:26:54"
+  },
+  {
+    "order_id": "ORD-20260719-0016",
+    "customer_id": "CUS-0006",
+    "customer": {
+      "name": "Đỗ Minh Quân",
+      "phone": "0933333444",
+      "address": "Hà Đông, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "20/10",
+      "recipient": "người yêu",
+      "budget": 800000,
+      "budget_min": 800000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "large",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 4,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 7,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 6,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 829000
+    },
+    "payment": {
+      "payment_code": "BQ202607190016",
+      "amount": 829000,
+      "transfer_content": "BQ202607190016 Đỗ Minh Quân",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:28:02",
+    "updated_at": "2026-07-19 21:28:02"
+  },
+  {
+    "order_id": "ORD-20260719-0017",
+    "customer_id": "CUS-0007",
+    "customer": {
+      "name": "Công ty Minh Long",
+      "phone": "0909999888",
+      "address": "Quận 1, TP HCM"
+    },
+    "bouquet": {
+      "occasion": "khai trương",
+      "recipient": "khách hàng",
+      "budget": 1000000,
+      "budget_min": 1000000,
+      "budget_max": null,
+      "budget_type": "minimum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "premium",
+      "bouquet_items": [
+        {
+          "flower_name": "cát tường",
+          "role": "main",
+          "quantity": 6,
+          "unit_price": 22000,
+          "reason": "cát tường phù hợp dịp khai trương."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "hướng dương",
+          "role": "support",
+          "quantity": 10,
+          "unit_price": 18000,
+          "reason": "Hướng dương tạo cảm giác tươi sáng, tích cực, phù hợp với dịp chúc mừng hoặc tốt nghiệp."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 8,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 962000
+    },
+    "payment": {
+      "payment_code": "BQ202607190017",
+      "amount": 962000,
+      "transfer_content": "BQ202607190017 Công ty Minh Long",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:34:14",
+    "updated_at": "2026-07-19 21:34:14"
+  },
+  {
+    "order_id": "ORD-20260719-0018",
+    "customer_id": "CUS-0008",
+    "customer": {
+      "name": "Hoàng Anh",
+      "phone": "0922222333",
+      "address": "Ba Đình, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "xin lỗi",
+      "recipient": "người yêu",
+      "budget": 650000,
+      "budget_min": null,
+      "budget_max": null,
+      "budget_type": "approx",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu hợp để tặng người yêu."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 2,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 570000
+    },
+    "payment": {
+      "payment_code": "BQ202607190018",
+      "amount": 570000,
+      "transfer_content": "BQ202607190018 Hoàng Anh",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:35:20",
+    "updated_at": "2026-07-19 21:35:20"
+  },
+  {
+    "order_id": "ORD-20260719-0019",
+    "customer_id": "CUS-0009",
+    "customer": {
+      "name": "Nguyễn Thu Hà",
+      "phone": "0911111222",
+      "address": "Đống Đa, Hà Nội"
+    },
+    "bouquet": {
+      "occasion": "sinh nhật",
+      "recipient": "mẹ",
+      "budget": 600000,
+      "budget_min": null,
+      "budget_max": 600000,
+      "budget_type": "maximum",
+      "flower_preference": [],
+      "flower_avoidance": [],
+      "color_tone": [],
+      "style": [],
+      "delivery_time": null,
+      "bouquet_size": "medium",
+      "bouquet_items": [
+        {
+          "flower_name": "cẩm tú cầu",
+          "role": "main",
+          "quantity": 3,
+          "unit_price": 45000,
+          "reason": "cẩm tú cầu phù hợp dịp sinh nhật, hợp để tặng mẹ."
+        },
+        {
+          "flower_name": "hoa hồng kem",
+          "role": "support",
+          "quantity": 1,
+          "unit_price": 25000,
+          "reason": "Hoa hồng kem giúp bó hoa sáng, mềm và sang hơn, phù hợp khi muốn tạo cảm giác tinh tế."
+        },
+        {
+          "flower_name": "baby trắng",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 20000,
+          "reason": "Baby trắng giúp bó hoa nhẹ nhàng, thoáng và mềm hơn, rất hợp để phối với hoa chính."
+        },
+        {
+          "flower_name": "cát tường",
+          "role": "support",
+          "quantity": 5,
+          "unit_price": 22000,
+          "reason": "Cát tường tạo cảm giác thanh lịch, trang nhã, phù hợp với các dịp tặng người thân hoặc chúc mừng."
+        },
+        {
+          "flower_name": "lá bạc",
+          "role": "decoration",
+          "quantity": 1,
+          "unit_price": 10000,
+          "reason": "Dùng để trang trí, giúp bó hoa đầy đặn và hài hòa hơn."
+        }
+      ],
+      "estimated_price": 460000
+    },
+    "payment": {
+      "payment_code": "BQ202607190019",
+      "amount": 460000,
+      "transfer_content": "BQ202607190019 Nguyễn Thu Hà",
+      "payment_status": "pending",
+      "note": "Khách hàng vui lòng chuyển khoản đúng nội dung để shop xác nhận đơn nhanh hơn."
+    },
+    "status": "pending_payment",
+    "created_at": "2026-07-19 21:36:28",
+    "updated_at": "2026-07-19 21:36:28"
+  }
+]

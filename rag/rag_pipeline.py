@@ -1,5 +1,5 @@
-from hybrid_retriever import HybridRetriever
-from rag_prompt_builder import RAGPromptBuilder
+from rag.hybrid_retriever import HybridRetriever
+from rag.rag_prompt_builder import RAGPromptBuilder
 
 
 class RAGPipeline:

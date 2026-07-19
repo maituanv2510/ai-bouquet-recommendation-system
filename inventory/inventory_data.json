@@ -1,0 +1,72 @@
+{
+  "cẩm tú cầu": {
+    "flower_name": "cẩm tú cầu",
+    "stock": 20,
+    "unit_price": 45000,
+    "color": ["xanh", "trắng", "hồng"],
+    "suitable_occasions": ["sinh nhật", "kỷ niệm", "tặng mẹ", "tặng người yêu"],
+    "suitable_recipients": ["mẹ", "bạn nữ", "người yêu", "đồng nghiệp"],
+    "style_tags": ["nhẹ nhàng", "sang trọng", "Hàn Quốc"],
+    "status": "available"
+  },
+  "hoa hồng kem": {
+    "flower_name": "hoa hồng kem",
+    "stock": 50,
+    "unit_price": 25000,
+    "color": ["kem", "trắng", "pastel"],
+    "suitable_occasions": ["sinh nhật", "kỷ niệm", "cầu hôn", "chúc mừng"],
+    "suitable_recipients": ["mẹ", "bạn nữ", "người yêu"],
+    "style_tags": ["tinh tế", "sang trọng", "lãng mạn"],
+    "status": "available"
+  },
+  "baby trắng": {
+    "flower_name": "baby trắng",
+    "stock": 35,
+    "unit_price": 20000,
+    "color": ["trắng"],
+    "suitable_occasions": ["sinh nhật", "kỷ niệm", "tốt nghiệp", "chúc mừng"],
+    "suitable_recipients": ["mẹ", "bạn nữ", "người yêu", "đồng nghiệp", "thầy cô"],
+    "style_tags": ["nhẹ nhàng", "tinh tế", "phối phụ"],
+    "status": "available"
+  },
+  "cát tường": {
+    "flower_name": "cát tường",
+    "stock": 30,
+    "unit_price": 22000,
+    "color": ["trắng", "hồng", "tím"],
+    "suitable_occasions": ["sinh nhật", "chúc mừng", "tốt nghiệp", "khai trương"],
+    "suitable_recipients": ["mẹ", "bạn nữ", "đồng nghiệp", "thầy cô"],
+    "style_tags": ["thanh lịch", "nhẹ nhàng", "trang nhã"],
+    "status": "available"
+  },
+  "tulip": {
+    "flower_name": "tulip",
+    "stock": 0,
+    "unit_price": 60000,
+    "color": ["trắng", "hồng", "vàng", "tím"],
+    "suitable_occasions": ["sinh nhật", "kỷ niệm", "tỏ tình", "chúc mừng"],
+    "suitable_recipients": ["bạn nữ", "người yêu"],
+    "style_tags": ["sang trọng", "hiện đại", "premium"],
+    "status": "out_of_stock"
+  },
+  "hướng dương": {
+    "flower_name": "hướng dương",
+    "stock": 25,
+    "unit_price": 18000,
+    "color": ["vàng"],
+    "suitable_occasions": ["tốt nghiệp", "chúc mừng", "khai trương"],
+    "suitable_recipients": ["bạn bè", "đồng nghiệp", "thầy cô"],
+    "style_tags": ["rực rỡ", "năng động", "tươi sáng"],
+    "status": "available"
+  },
+  "lá bạc": {
+    "flower_name": "lá bạc",
+    "stock": 40,
+    "unit_price": 10000,
+    "color": ["xanh", "bạc"],
+    "suitable_occasions": ["sinh nhật", "kỷ niệm", "chúc mừng", "tốt nghiệp"],
+    "suitable_recipients": ["mẹ", "bạn nữ", "người yêu", "đồng nghiệp"],
+    "style_tags": ["phối phụ", "trang trí", "Hàn Quốc"],
+    "status": "available"
+  }
+}

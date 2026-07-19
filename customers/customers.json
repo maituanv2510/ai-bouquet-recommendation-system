@@ -1,0 +1,121 @@
+[
+  {
+    "customer_id": "CUS-0001",
+    "name": "Thái Đức Cường",
+    "phone": "0829092076",
+    "address": "Thạch Hòa Thạch Thất Hòa Lạc",
+    "orders": [
+      "ORD-20260718-0001"
+    ],
+    "created_at": "2026-07-18 09:36:16",
+    "updated_at": "2026-07-18 09:36:16"
+  },
+  {
+    "customer_id": "CUS-0002",
+    "name": "Nguyễn Viết Anh",
+    "phone": "0866660251",
+    "address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An",
+    "orders": [
+      "ORD-20260719-0002",
+      "ORD-20260719-0003",
+      "ORD-20260719-0012"
+    ],
+    "created_at": "2026-07-19 19:15:39",
+    "updated_at": "2026-07-19 21:23:25"
+  },
+  {
+    "customer_id": "CUS-0003",
+    "name": "Trần Minh Anh",
+    "phone": "0912345678",
+    "address": "Cầu Giấy, Hà Nội",
+    "orders": [
+      "ORD-20260719-0004",
+      "ORD-20260719-0013"
+    ],
+    "created_at": "2026-07-19 19:43:59",
+    "updated_at": "2026-07-19 21:24:36"
+  },
+  {
+    "customer_id": "CUS-0004",
+    "name": "Lê Hoàng Nam",
+    "phone": "0987654321",
+    "address": "Thanh Xuân, Hà Nội",
+    "orders": [
+      "ORD-20260719-0005",
+      "ORD-20260719-0014"
+    ],
+    "created_at": "2026-07-19 19:45:06",
+    "updated_at": "2026-07-19 21:25:46"
+  },
+  {
+    "customer_id": "CUS-0005",
+    "name": "Phạm Quang Huy",
+    "phone": "0901111222",
+    "address": "Nam Từ Liêm, Hà Nội",
+    "orders": [
+      "ORD-20260719-0006",
+      "ORD-20260719-0015"
+    ],
+    "created_at": "2026-07-19 19:46:13",
+    "updated_at": "2026-07-19 21:26:54"
+  },
+  {
+    "customer_id": "CUS-0006",
+    "name": "Đỗ Minh Quân",
+    "phone": "0933333444",
+    "address": "Hà Đông, Hà Nội",
+    "orders": [
+      "ORD-20260719-0007",
+      "ORD-20260719-0016"
+    ],
+    "created_at": "2026-07-19 19:47:20",
+    "updated_at": "2026-07-19 21:28:02"
+  },
+  {
+    "customer_id": "CUS-0007",
+    "name": "Công ty Minh Long",
+    "phone": "0909999888",
+    "address": "Quận 1, TP HCM",
+    "orders": [
+      "ORD-20260719-0008",
+      "ORD-20260719-0017"
+    ],
+    "created_at": "2026-07-19 19:53:43",
+    "updated_at": "2026-07-19 21:34:14"
+  },
+  {
+    "customer_id": "CUS-0008",
+    "name": "Hoàng Anh",
+    "phone": "0922222333",
+    "address": "Ba Đình, Hà Nội",
+    "orders": [
+      "ORD-20260719-0009",
+      "ORD-20260719-0018"
+    ],
+    "created_at": "2026-07-19 19:54:57",
+    "updated_at": "2026-07-19 21:35:20"
+  },
+  {
+    "customer_id": "CUS-0009",
+    "name": "Nguyễn Thu Hà",
+    "phone": "0911111222",
+    "address": "Đống Đa, Hà Nội",
+    "orders": [
+      "ORD-20260719-0010",
+      "ORD-20260719-0019"
+    ],
+    "created_at": "2026-07-19 19:56:11",
+    "updated_at": "2026-07-19 21:36:28"
+  },
+  {
+    "customer_id": "CUS-0010",
+    "name": "Nguyễn Hoàng Anh",
+    "phone": "0982590829",
+    "address": "số 58 Nguyễn Đức Cảnh , Vinh, Nghệ An",
+    "orders": [
+      "ORD-20260719-0011"
+    ],
+    "created_at": "2026-07-19 21:18:40",
+    "updated_at": "2026-07-19 21:18:40"
+  }
+]

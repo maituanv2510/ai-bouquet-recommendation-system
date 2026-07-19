@@ -3,7 +3,7 @@ import pandas as pd
 
 from qdrant_client import QdrantClient
 
-from embedding_service import EmbeddingService
+from rag.embedding_service import EmbeddingService
 
 
 FLOWER_KB_PATH = "data/processed/flower_knowledge_base.csv"
