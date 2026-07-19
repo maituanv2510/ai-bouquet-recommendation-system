@@ -1,0 +1,3681 @@
+{
+  "summary": {
+    "generated_at": "2026-07-19 21:37:16",
+    "total_cases": 20,
+    "passed_cases": 14,
+    "failed_cases": 6,
+    "pass_rate": 0.7,
+    "failed_case_details": [
+      {
+        "case_id": "E2E_012",
+        "name": "Ask budget suggestion",
+        "failed_checks": [
+          "must_answer_budget_suggestion"
+        ]
+      },
+      {
+        "case_id": "E2E_013",
+        "name": "Ask flower pairing",
+        "failed_checks": [
+          "flower_preference_contains",
+          "must_answer_flower_pairing"
+        ]
+      },
+      {
+        "case_id": "E2E_014",
+        "name": "Ask flower meaning",
+        "failed_checks": [
+          "flower_preference_contains",
+          "must_answer_flower_meaning"
+        ]
+      },
+      {
+        "case_id": "E2E_015",
+        "name": "Graduation bouquet",
+        "failed_checks": [
+          "final_recipient",
+          "must_recommend",
+          "must_create_order",
+          "must_have_payment_code"
+        ]
+      },
+      {
+        "case_id": "E2E_018",
+        "name": "Avoid flower request",
+        "failed_checks": [
+          "flower_avoidance_contains"
+        ]
+      },
+      {
+        "case_id": "E2E_019",
+        "name": "Color tone from start",
+        "failed_checks": [
+          "color_tone_contains"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "case_id": "E2E_001",
+      "name": "Valentine full order flow",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "Valentine",
+          "actual": "Valentine",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 700000,
+          "actual": 700000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "minimum",
+          "actual": "minimum",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "Valentine",
+        "recipient": "người yêu",
+        "budget": 700000,
+        "budget_min": 700000,
+        "budget_max": null,
+        "budget_type": "minimum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Nguyễn Viết Anh",
+        "customer_phone": "0866660251",
+        "customer_address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An"
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn mua một bó hoa tặng người yêu nhân dịp valentine",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "Valentine",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tầm trên 700k đi",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 700.000đ. Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 700000,
+              "budget_min": 700000,
+              "budget_max": null,
+              "budget_type": "minimum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "ok tôi lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Nguyễn Viết Anh - 0866660251 - Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0012\n\n**Tổng tiền:** 829,000đ\n\n**Mã thanh toán:** BQ202607190012\n\n**Nội dung chuyển khoản:** `BQ202607190012 Nguyễn Viết Anh`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Nguyễn Viết Anh",
+              "customer_phone": "0866660251",
+              "customer_address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Nguyễn Viết Anh",
+            "customer_phone": "0866660251",
+            "customer_address": "Xóm Trung Tiến, Xã Hưng Đông, Vinh, Nghệ An"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_002",
+      "name": "Birthday mother under budget",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "sinh nhật",
+          "actual": "sinh nhật",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "mẹ",
+          "actual": "mẹ",
+          "passed": true
+        },
+        "budget": {
+          "expected": 500000,
+          "actual": 500000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "maximum",
+          "actual": "maximum",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "sinh nhật",
+        "recipient": "mẹ",
+        "budget": 500000,
+        "budget_min": null,
+        "budget_max": 500000,
+        "budget_type": "maximum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Trần Minh Anh",
+        "customer_phone": "0912345678",
+        "customer_address": "Cầu Giấy, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "mình muốn đặt bó hoa tặng mẹ sinh nhật",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "sinh nhật",
+              "recipient": "mẹ",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "dưới 500k thôi nhé",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 2 cành (90,000đ)\n- **hoa hồng kem**: 3 cành (75,000đ)\n- **baby trắng**: 3 cành (60,000đ)\n- **cát tường**: 3 cành (66,000đ)\n- **lá bạc**: 3 cành (30,000đ)\n\n**Giá dự kiến:** 401,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa không vượt quá khoảng 500.000đ. Phương án hiện tại ước lượng khoảng 401.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size small-medium và target khoảng 425.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 401.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size small-medium và target khoảng 425.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 401.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 500000,
+              "budget_min": null,
+              "budget_max": 500000,
+              "budget_type": "maximum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": 500000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "ok lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": 500000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Trần Minh Anh - 0912345678 - Cầu Giấy, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0013\n\n**Tổng tiền:** 401,000đ\n\n**Mã thanh toán:** BQ202607190013\n\n**Nội dung chuyển khoản:** `BQ202607190013 Trần Minh Anh`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Trần Minh Anh",
+              "customer_phone": "0912345678",
+              "customer_address": "Cầu Giấy, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": 500000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Trần Minh Anh",
+            "customer_phone": "0912345678",
+            "customer_address": "Cầu Giấy, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_003",
+      "name": "Teacher day 20/11",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "20/11",
+          "actual": "20/11",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "thầy cô",
+          "actual": "thầy cô",
+          "passed": true
+        },
+        "budget": {
+          "expected": 600000,
+          "actual": 600000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "approx",
+          "actual": "approx",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "20/11",
+        "recipient": "thầy cô",
+        "budget": 600000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Lê Hoàng Nam",
+        "customer_phone": "0987654321",
+        "customer_address": "Thanh Xuân, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi cần một bó hoa tặng cô giáo ngày 20/11",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "20/11",
+              "recipient": "thầy cô",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/11",
+            "recipient": "thầy cô",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "khoảng 600k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **baby trắng**: 3 cành (60,000đ)\n- **hoa hồng kem**: 5 cành (125,000đ)\n- **cát tường**: 5 cành (110,000đ)\n- **hướng dương**: 5 cành (90,000đ)\n- **lá bạc**: 4 cành (40,000đ)\n\n**Giá dự kiến:** 505,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 505.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 20/11 cho thầy cô. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm baby trắng, hoa hồng kem, cát tường, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 505.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 20/11 cho thầy cô. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm baby trắng, hoa hồng kem, cát tường, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 505.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 600000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "20/11",
+            "recipient": "thầy cô",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "chốt bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/11",
+            "recipient": "thầy cô",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Lê Hoàng Nam - 0987654321 - Thanh Xuân, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0014\n\n**Tổng tiền:** 505,000đ\n\n**Mã thanh toán:** BQ202607190014\n\n**Nội dung chuyển khoản:** `BQ202607190014 Lê Hoàng Nam`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Lê Hoàng Nam",
+              "customer_phone": "0987654321",
+              "customer_address": "Thanh Xuân, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/11",
+            "recipient": "thầy cô",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Lê Hoàng Nam",
+            "customer_phone": "0987654321",
+            "customer_address": "Thanh Xuân, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_004",
+      "name": "Women's day 8/3",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "8/3",
+          "actual": "8/3",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "mẹ",
+          "actual": "mẹ",
+          "passed": true
+        },
+        "budget": {
+          "expected": 450000,
+          "actual": 450000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "approx",
+          "actual": "approx",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "8/3",
+        "recipient": "mẹ",
+        "budget": 450000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Phạm Quang Huy",
+        "customer_phone": "0901111222",
+        "customer_address": "Nam Từ Liêm, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "mua hoa tặng mẹ ngày 8/3",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "8/3",
+              "recipient": "mẹ",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "8/3",
+            "recipient": "mẹ",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tầm 450k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 2 cành (90,000đ)\n- **hoa hồng kem**: 3 cành (75,000đ)\n- **baby trắng**: 3 cành (60,000đ)\n- **cát tường**: 3 cành (66,000đ)\n- **lá bạc**: 3 cành (30,000đ)\n\n**Giá dự kiến:** 401,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 401.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 8/3 cho mẹ. Với ngân sách này, hệ thống chọn size small-medium và target khoảng 450.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 401.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 8/3 cho mẹ. Với ngân sách này, hệ thống chọn size small-medium và target khoảng 450.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 401.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 450000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "8/3",
+            "recipient": "mẹ",
+            "budget": 450000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "ok lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "8/3",
+            "recipient": "mẹ",
+            "budget": 450000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Phạm Quang Huy - 0901111222 - Nam Từ Liêm, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0015\n\n**Tổng tiền:** 401,000đ\n\n**Mã thanh toán:** BQ202607190015\n\n**Nội dung chuyển khoản:** `BQ202607190015 Phạm Quang Huy`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Phạm Quang Huy",
+              "customer_phone": "0901111222",
+              "customer_address": "Nam Từ Liêm, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "8/3",
+            "recipient": "mẹ",
+            "budget": 450000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Phạm Quang Huy",
+            "customer_phone": "0901111222",
+            "customer_address": "Nam Từ Liêm, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_005",
+      "name": "Vietnamese women's day 20/10",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "20/10",
+          "actual": "20/10",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 800000,
+          "actual": 800000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "minimum",
+          "actual": "minimum",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "20/10",
+        "recipient": "người yêu",
+        "budget": 800000,
+        "budget_min": 800000,
+        "budget_max": null,
+        "budget_type": "minimum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Đỗ Minh Quân",
+        "customer_phone": "0933333444",
+        "customer_address": "Hà Đông, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "anh muốn bó hoa tặng vợ ngày 20/10",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "20/10",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/10",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "trên 800k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 800.000đ. Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 20/10 cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 1.000.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp 20/10 cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 1.000.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 800000,
+              "budget_min": 800000,
+              "budget_max": null,
+              "budget_type": "minimum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "20/10",
+            "recipient": "người yêu",
+            "budget": 800000,
+            "budget_min": 800000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tôi sẽ lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/10",
+            "recipient": "người yêu",
+            "budget": 800000,
+            "budget_min": 800000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Đỗ Minh Quân - 0933333444 - Hà Đông, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0016\n\n**Tổng tiền:** 829,000đ\n\n**Mã thanh toán:** BQ202607190016\n\n**Nội dung chuyển khoản:** `BQ202607190016 Đỗ Minh Quân`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Đỗ Minh Quân",
+              "customer_phone": "0933333444",
+              "customer_address": "Hà Đông, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "20/10",
+            "recipient": "người yêu",
+            "budget": 800000,
+            "budget_min": 800000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Đỗ Minh Quân",
+            "customer_phone": "0933333444",
+            "customer_address": "Hà Đông, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_006",
+      "name": "Inventory check hydrangea",
+      "passed": true,
+      "checks": {
+        "flower_preference_contains": {
+          "expected": [
+            "cẩm tú cầu"
+          ],
+          "actual": [
+            "cẩm tú cầu"
+          ],
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_check_inventory": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [
+          "cẩm tú cầu"
+        ],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "shop còn cẩm tú cầu không",
+          "bot_message": "Dạ **cẩm tú cầu** hiện còn **20 cành**, giá khoảng **45,000đ/cành** ạ.",
+          "result_type": "inventory",
+          "policy_output": {
+            "intent": "ask_inventory",
+            "action": "check_inventory",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [
+                "cẩm tú cầu"
+              ],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [
+              "cẩm tú cầu"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_007",
+      "name": "Inventory check rose cream",
+      "passed": true,
+      "checks": {
+        "flower_preference_contains": {
+          "expected": [
+            "hoa hồng kem"
+          ],
+          "actual": [
+            "hoa hồng kem",
+            "hoa hồng"
+          ],
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_check_inventory": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [
+          "hoa hồng kem",
+          "hoa hồng"
+        ],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "hoa hồng kem còn bao nhiêu cành",
+          "bot_message": "Dạ **hoa hồng kem** hiện còn **50 cành**, giá khoảng **25,000đ/cành** ạ.\n\nDạ hiện em chưa tìm thấy **hoa hồng** trong kho. Anh/chị có thể tham khảo: cẩm tú cầu, hoa hồng kem, baby trắng.",
+          "result_type": "inventory",
+          "policy_output": {
+            "intent": "ask_inventory",
+            "action": "check_inventory",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [
+                "hoa hồng kem",
+                "hoa hồng"
+              ],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [
+              "hoa hồng kem",
+              "hoa hồng"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_008",
+      "name": "Ask flower colors after recommendation",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "Valentine",
+          "actual": "Valentine",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 700000,
+          "actual": 700000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "minimum",
+          "actual": "minimum",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_answer_flower_colors": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "Valentine",
+        "recipient": "người yêu",
+        "budget": 700000,
+        "budget_min": 700000,
+        "budget_max": null,
+        "budget_type": "minimum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn mua một bó hoa tặng người yêu nhân dịp valentine",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "Valentine",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tầm trên 700k đi",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 700.000đ. Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 700000,
+              "budget_min": 700000,
+              "budget_max": null,
+              "budget_type": "minimum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "những hoa trên có màu nào khác không",
+          "bot_message": "**cẩm tú cầu** hiện có các màu/tone: **xanh, trắng, hồng**.\n\n**hoa hồng kem** hiện có các màu/tone: **kem, trắng, pastel**.\n\n**baby trắng** hiện có các màu/tone: **trắng**.\n\n**cát tường** hiện có các màu/tone: **trắng, hồng, tím**.\n\n**lá bạc** hiện có các màu/tone: **xanh, bạc**.",
+          "result_type": "flower_colors",
+          "policy_output": {
+            "intent": "ask_flower_colors",
+            "action": "answer_flower_colors",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_009",
+      "name": "Modify color after recommendation",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "Valentine",
+          "actual": "Valentine",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 700000,
+          "actual": 700000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "minimum",
+          "actual": "minimum",
+          "passed": true
+        },
+        "flower_preference_contains": {
+          "expected": [
+            "cẩm tú cầu"
+          ],
+          "actual": [
+            "cẩm tú cầu"
+          ],
+          "passed": true
+        },
+        "color_tone_contains": {
+          "expected": [
+            "xanh"
+          ],
+          "actual": [
+            "xanh"
+          ],
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "Valentine",
+        "recipient": "người yêu",
+        "budget": 700000,
+        "budget_min": 700000,
+        "budget_max": null,
+        "budget_type": "minimum",
+        "flower_preference": [
+          "cẩm tú cầu"
+        ],
+        "flower_avoidance": [],
+        "color_tone": [
+          "xanh"
+        ],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn mua một bó hoa tặng người yêu nhân dịp valentine",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "Valentine",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [
+              "cẩm tú cầu"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "xanh"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tầm trên 700k đi",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 700.000đ. Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 700000,
+              "budget_min": 700000,
+              "budget_max": null,
+              "budget_type": "minimum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [
+              "cẩm tú cầu"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "xanh"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "cẩm tú cầu màu xanh làm chủ đạo nhé",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 700.000đ. Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, tone xanh, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, tone xanh, phù hợp dịp Valentine cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 875.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "modify_flower",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [
+                "cẩm tú cầu"
+              ],
+              "flower_avoidance": [],
+              "color_tone": [
+                "xanh"
+              ],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "Valentine",
+            "recipient": "người yêu",
+            "budget": 700000,
+            "budget_min": 700000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [
+              "cẩm tú cầu"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "xanh"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_010",
+      "name": "Modify flower after recommendation",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "sinh nhật",
+          "actual": "sinh nhật",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "mẹ",
+          "actual": "mẹ",
+          "passed": true
+        },
+        "budget": {
+          "expected": 600000,
+          "actual": 600000,
+          "passed": true
+        },
+        "flower_preference_contains": {
+          "expected": [
+            "hoa hồng kem"
+          ],
+          "actual": [
+            "hoa hồng kem",
+            "hoa hồng"
+          ],
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "sinh nhật",
+        "recipient": "mẹ",
+        "budget": 600000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [
+          "hoa hồng kem",
+          "hoa hồng"
+        ],
+        "flower_avoidance": [],
+        "color_tone": [
+          "hồng",
+          "kem"
+        ],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn bó hoa tặng mẹ sinh nhật",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "sinh nhật",
+              "recipient": "mẹ",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [
+              "hoa hồng kem",
+              "hoa hồng"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "hồng",
+              "kem"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "khoảng 600k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 3 cành (135,000đ)\n- **hoa hồng kem**: 5 cành (125,000đ)\n- **baby trắng**: 5 cành (100,000đ)\n- **cát tường**: 5 cành (110,000đ)\n- **lá bạc**: 2 cành (20,000đ)\n\n**Giá dự kiến:** 570,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 570.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 570.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 570.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 600000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [
+              "hoa hồng kem",
+              "hoa hồng"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "hồng",
+              "kem"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "thêm hoa hồng kem vào bó này nhé",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **hoa hồng kem**: 3 cành (75,000đ)\n- **baby trắng**: 5 cành (100,000đ)\n- **cát tường**: 5 cành (110,000đ)\n- **hướng dương**: 5 cành (90,000đ)\n- **lá bạc**: 4 cành (40,000đ)\n\n**Giá dự kiến:** 495,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 495.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, tone hồng, kem, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm hoa hồng kem, baby trắng, cát tường, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 495.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, tone hồng, kem, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 600.000đ. Các hoa chính/phụ gồm hoa hồng kem, baby trắng, cát tường, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 495.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "modify_flower",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [
+                "hoa hồng kem",
+                "hoa hồng"
+              ],
+              "flower_avoidance": [],
+              "color_tone": [
+                "hồng",
+                "kem"
+              ],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [
+              "hoa hồng kem",
+              "hoa hồng"
+            ],
+            "flower_avoidance": [],
+            "color_tone": [
+              "hồng",
+              "kem"
+            ],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_011",
+      "name": "Customer tries to confirm payment",
+      "passed": true,
+      "checks": {
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_block_payment_confirm": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "xác nhận thanh toán đơn ORD-20260719-0001",
+          "bot_message": "Dạ chức năng xác nhận thanh toán chỉ dành cho admin. Anh/chị vui lòng chờ shop kiểm tra giao dịch và xác nhận đơn hàng ạ.",
+          "result_type": "security_block",
+          "policy_output": {
+            "intent": "general_question",
+            "action": "answer_general",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_012",
+      "name": "Ask budget suggestion",
+      "passed": false,
+      "checks": {
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_answer_budget_suggestion": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi chưa biết nên mua bó hoa tầm bao nhiêu tiền",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này vào dịp gì ạ? Ví dụ sinh nhật, kỷ niệm, tốt nghiệp hoặc chúc mừng.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_013",
+      "name": "Ask flower pairing",
+      "passed": false,
+      "checks": {
+        "flower_preference_contains": {
+          "expected": [
+            "cẩm tú cầu"
+          ],
+          "actual": [],
+          "passed": false
+        },
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_answer_flower_pairing": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "cẩm tú cầu phối với hoa gì đẹp",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này vào dịp gì ạ? Ví dụ sinh nhật, kỷ niệm, tốt nghiệp hoặc chúc mừng.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_014",
+      "name": "Ask flower meaning",
+      "passed": false,
+      "checks": {
+        "flower_preference_contains": {
+          "expected": [
+            "cẩm tú cầu"
+          ],
+          "actual": [],
+          "passed": false
+        },
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_answer_flower_meaning": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "cẩm tú cầu có ý nghĩa gì",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này vào dịp gì ạ? Ví dụ sinh nhật, kỷ niệm, tốt nghiệp hoặc chúc mừng.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_015",
+      "name": "Graduation bouquet",
+      "passed": false,
+      "checks": {
+        "final_occasion": {
+          "expected": "tốt nghiệp",
+          "actual": "tốt nghiệp",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "bạn bè",
+          "actual": null,
+          "passed": false
+        },
+        "budget": {
+          "expected": 500000,
+          "actual": 500000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "approx",
+          "actual": "approx",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": false,
+          "passed": false
+        }
+      },
+      "final_state": {
+        "occasion": "tốt nghiệp",
+        "recipient": null,
+        "budget": 500000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Ngô Hải Yến",
+        "customer_phone": "0977777888",
+        "customer_address": "Thủ Đức, TP HCM"
+      },
+      "conversation_results": [
+        {
+          "user_message": "mình cần bó hoa tặng bạn tốt nghiệp",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này cho ai ạ? Ví dụ người yêu, mẹ, bạn bè, thầy cô hoặc đồng nghiệp.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "tốt nghiệp",
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "tốt nghiệp",
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "khoảng 500k",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này cho ai ạ? Ví dụ người yêu, mẹ, bạn bè, thầy cô hoặc đồng nghiệp.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 500000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "tốt nghiệp",
+            "recipient": null,
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "okela",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "tốt nghiệp",
+            "recipient": null,
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Ngô Hải Yến - 0977777888 - Thủ Đức, TP HCM",
+          "bot_message": "Dạ em chưa có bó hoa nào để tạo đơn. Anh/chị vui lòng để em gợi ý bó hoa trước ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Ngô Hải Yến",
+              "customer_phone": "0977777888",
+              "customer_address": "Thủ Đức, TP HCM",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "tốt nghiệp",
+            "recipient": null,
+            "budget": 500000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Ngô Hải Yến",
+            "customer_phone": "0977777888",
+            "customer_address": "Thủ Đức, TP HCM"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_016",
+      "name": "Grand opening bouquet",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "khai trương",
+          "actual": "khai trương",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "khách hàng",
+          "actual": "khách hàng",
+          "passed": true
+        },
+        "budget": {
+          "expected": 1000000,
+          "actual": 1000000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "minimum",
+          "actual": "minimum",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "khai trương",
+        "recipient": "khách hàng",
+        "budget": 1000000,
+        "budget_min": 1000000,
+        "budget_max": null,
+        "budget_type": "minimum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Công ty Minh Long",
+        "customer_phone": "0909999888",
+        "customer_address": "Quận 1, TP HCM"
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn đặt hoa chúc mừng khai trương cho khách hàng",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "khai trương",
+              "recipient": "khách hàng",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "khai trương",
+            "recipient": "khách hàng",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "trên 1 triệu",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cát tường**: 6 cành (132,000đ)\n- **hoa hồng kem**: 10 cành (250,000đ)\n- **baby trắng**: 10 cành (200,000đ)\n- **hướng dương**: 10 cành (180,000đ)\n- **lá bạc**: 8 cành (80,000đ)\n\n**Giá dự kiến:** 962,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa trên khoảng 1.000.000đ. Phương án hiện tại ước lượng khoảng 962.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp khai trương cho khách hàng. Với ngân sách này, hệ thống chọn size premium và target khoảng 1.250.000đ. Các hoa chính/phụ gồm cát tường, hoa hồng kem, baby trắng, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 962.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp khai trương cho khách hàng. Với ngân sách này, hệ thống chọn size premium và target khoảng 1.250.000đ. Các hoa chính/phụ gồm cát tường, hoa hồng kem, baby trắng, hướng dương, lá bạc. Giá ước lượng hiện tại khoảng 962.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 1000000,
+              "budget_min": 1000000,
+              "budget_max": null,
+              "budget_type": "minimum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "khai trương",
+            "recipient": "khách hàng",
+            "budget": 1000000,
+            "budget_min": 1000000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "khai trương",
+            "recipient": "khách hàng",
+            "budget": 1000000,
+            "budget_min": 1000000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Công ty Minh Long - 0909999888 - Quận 1, TP HCM",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0017\n\n**Tổng tiền:** 962,000đ\n\n**Mã thanh toán:** BQ202607190017\n\n**Nội dung chuyển khoản:** `BQ202607190017 Công ty Minh Long`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Công ty Minh Long",
+              "customer_phone": "0909999888",
+              "customer_address": "Quận 1, TP HCM",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "khai trương",
+            "recipient": "khách hàng",
+            "budget": 1000000,
+            "budget_min": 1000000,
+            "budget_max": null,
+            "budget_type": "minimum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Công ty Minh Long",
+            "customer_phone": "0909999888",
+            "customer_address": "Quận 1, TP HCM"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_017",
+      "name": "Apology bouquet",
+      "passed": true,
+      "checks": {
+        "final_occasion": {
+          "expected": "xin lỗi",
+          "actual": "xin lỗi",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 650000,
+          "actual": 650000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "approx",
+          "actual": "approx",
+          "passed": true
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_have_payment_code": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "xin lỗi",
+        "recipient": "người yêu",
+        "budget": 650000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Hoàng Anh",
+        "customer_phone": "0922222333",
+        "customer_address": "Ba Đình, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn mua hoa để xin lỗi người yêu",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "xin lỗi",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "xin lỗi",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "tầm 650k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 3 cành (135,000đ)\n- **hoa hồng kem**: 5 cành (125,000đ)\n- **baby trắng**: 5 cành (100,000đ)\n- **cát tường**: 5 cành (110,000đ)\n- **lá bạc**: 2 cành (20,000đ)\n\n**Giá dự kiến:** 570,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 570.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp xin lỗi cho người yêu. Với ngân sách này, hệ thống chọn size medium và target khoảng 650.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 570.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp xin lỗi cho người yêu. Với ngân sách này, hệ thống chọn size medium và target khoảng 650.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 570.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 650000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "xin lỗi",
+            "recipient": "người yêu",
+            "budget": 650000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "ok lấy bó này",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "xin lỗi",
+            "recipient": "người yêu",
+            "budget": 650000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Hoàng Anh - 0922222333 - Ba Đình, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0018\n\n**Tổng tiền:** 570,000đ\n\n**Mã thanh toán:** BQ202607190018\n\n**Nội dung chuyển khoản:** `BQ202607190018 Hoàng Anh`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Hoàng Anh",
+              "customer_phone": "0922222333",
+              "customer_address": "Ba Đình, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "xin lỗi",
+            "recipient": "người yêu",
+            "budget": 650000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Hoàng Anh",
+            "customer_phone": "0922222333",
+            "customer_address": "Ba Đình, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_018",
+      "name": "Avoid flower request",
+      "passed": false,
+      "checks": {
+        "final_occasion": {
+          "expected": "sinh nhật",
+          "actual": "sinh nhật",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "mẹ",
+          "actual": "mẹ",
+          "passed": true
+        },
+        "budget": {
+          "expected": 600000,
+          "actual": 600000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "maximum",
+          "actual": "maximum",
+          "passed": true
+        },
+        "flower_avoidance_contains": {
+          "expected": [
+            "tulip"
+          ],
+          "actual": [],
+          "passed": false
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_collect_customer_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "sinh nhật",
+        "recipient": "mẹ",
+        "budget": 600000,
+        "budget_min": null,
+        "budget_max": 600000,
+        "budget_type": "maximum",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": "Nguyễn Thu Hà",
+        "customer_phone": "0911111222",
+        "customer_address": "Đống Đa, Hà Nội"
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi cần bó hoa tặng mẹ sinh nhật nhưng tránh tulip",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "sinh nhật",
+              "recipient": "mẹ",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "dưới 600k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 3 cành (135,000đ)\n- **hoa hồng kem**: 1 cành (25,000đ)\n- **baby trắng**: 5 cành (100,000đ)\n- **cát tường**: 5 cành (110,000đ)\n- **lá bạc**: 1 cành (10,000đ)\n\n**Giá dự kiến:** 460,000đ\n\n**Ghi chú ngân sách:** Khách muốn bó hoa không vượt quá khoảng 600.000đ. Phương án hiện tại ước lượng khoảng 460.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 510.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 460.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp sinh nhật cho mẹ. Với ngân sách này, hệ thống chọn size medium và target khoảng 510.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 460.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 600000,
+              "budget_min": null,
+              "budget_max": 600000,
+              "budget_type": "maximum",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": 600000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "chốt đơn",
+          "bot_message": "Dạ anh/chị cho em xin thông tin nhận hàng theo mẫu:\n\n**Họ tên - Số điện thoại - Địa chỉ giao hàng**",
+          "result_type": "collect_customer_info",
+          "policy_output": {
+            "intent": "confirm_order",
+            "action": "collect_customer_info",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": 600000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "Nguyễn Thu Hà - 0911111222 - Đống Đa, Hà Nội",
+          "bot_message": "Dạ em đã tạo đơn hàng cho anh/chị ạ.\n\n**Mã đơn hàng:** ORD-20260719-0019\n\n**Tổng tiền:** 460,000đ\n\n**Mã thanh toán:** BQ202607190019\n\n**Nội dung chuyển khoản:** `BQ202607190019 Nguyễn Thu Hà`\n\nSau khi anh/chị chuyển khoản, shop sẽ kiểm tra và xác nhận thanh toán ạ.",
+          "result_type": "order",
+          "policy_output": {
+            "intent": "provide_customer_info",
+            "action": "create_order",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": "Nguyễn Thu Hà",
+              "customer_phone": "0911111222",
+              "customer_address": "Đống Đa, Hà Nội",
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "sinh nhật",
+            "recipient": "mẹ",
+            "budget": 600000,
+            "budget_min": null,
+            "budget_max": 600000,
+            "budget_type": "maximum",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": "Nguyễn Thu Hà",
+            "customer_phone": "0911111222",
+            "customer_address": "Đống Đa, Hà Nội"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_019",
+      "name": "Color tone from start",
+      "passed": false,
+      "checks": {
+        "final_occasion": {
+          "expected": "kỷ niệm",
+          "actual": "kỷ niệm",
+          "passed": true
+        },
+        "final_recipient": {
+          "expected": "người yêu",
+          "actual": "người yêu",
+          "passed": true
+        },
+        "budget": {
+          "expected": 900000,
+          "actual": 900000,
+          "passed": true
+        },
+        "budget_type": {
+          "expected": "approx",
+          "actual": "approx",
+          "passed": true
+        },
+        "color_tone_contains": {
+          "expected": [
+            "hồng"
+          ],
+          "actual": [],
+          "passed": false
+        },
+        "must_recommend": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": "kỷ niệm",
+        "recipient": "người yêu",
+        "budget": 900000,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": "approx",
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "tôi muốn bó hoa tone hồng tặng người yêu dịp kỷ niệm",
+          "bot_message": "Dạ anh/chị muốn bó hoa trong khoảng ngân sách bao nhiêu ạ? Ví dụ 500k, 800k hoặc khoảng từ 500k đến 1 triệu.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": "kỷ niệm",
+              "recipient": "người yêu",
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": "kỷ niệm",
+            "recipient": "người yêu",
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        },
+        {
+          "user_message": "khoảng 900k",
+          "bot_message": "Dạ em gợi ý cho anh/chị bó hoa như sau:\n\n**Thành phần bó hoa:**\n- **cẩm tú cầu**: 4 cành (180,000đ)\n- **hoa hồng kem**: 7 cành (175,000đ)\n- **baby trắng**: 7 cành (140,000đ)\n- **cát tường**: 7 cành (154,000đ)\n- **lá bạc**: 6 cành (60,000đ)\n\n**Giá dự kiến:** 829,000đ\n\n**Ghi chú ngân sách:** Phương án hiện tại ước lượng khoảng 829.000đ.\n\n**Tư vấn bó hoa:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp kỷ niệm cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 900.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\n**Tư vấn:** Dạ em đề xuất bó hoa này theo hướng nhẹ nhàng và dễ tặng, phù hợp dịp kỷ niệm cho người yêu. Với ngân sách này, hệ thống chọn size large và target khoảng 900.000đ. Các hoa chính/phụ gồm cẩm tú cầu, hoa hồng kem, baby trắng, cát tường, lá bạc. Cẩm tú cầu có form tròn, mềm và nổi bật nên rất hợp làm hoa chính. Khi phối với baby trắng, cát tường hoặc hoa hồng kem, bó hoa sẽ nhẹ nhàng, đầy đặn và tinh tế hơn. Giá ước lượng hiện tại khoảng 829.000đ.\n\nNếu anh/chị thích bó này, có thể nhắn **ok lấy bó này** để em tạo đơn ạ.",
+          "result_type": "recommendation",
+          "policy_output": {
+            "intent": "new_bouquet_request",
+            "action": "recommend_bouquet",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": 900000,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": "approx",
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": true,
+            "should_recommend": true
+          },
+          "state": {
+            "occasion": "kỷ niệm",
+            "recipient": "người yêu",
+            "budget": 900000,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": "approx",
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E2E_020",
+      "name": "Unclear request",
+      "passed": true,
+      "checks": {
+        "must_recommend": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_create_order": {
+          "expected": false,
+          "actual": false,
+          "passed": true
+        },
+        "must_ask_missing_info": {
+          "expected": true,
+          "actual": true,
+          "passed": true
+        }
+      },
+      "final_state": {
+        "occasion": null,
+        "recipient": null,
+        "budget": null,
+        "budget_min": null,
+        "budget_max": null,
+        "budget_type": null,
+        "flower_preference": [],
+        "flower_avoidance": [],
+        "color_tone": [],
+        "style": [],
+        "delivery_time": null,
+        "customer_name": null,
+        "customer_phone": null,
+        "customer_address": null
+      },
+      "conversation_results": [
+        {
+          "user_message": "mua hoa đẹp đẹp đi",
+          "bot_message": "Dạ anh/chị muốn tặng bó hoa này vào dịp gì ạ? Ví dụ sinh nhật, kỷ niệm, tốt nghiệp hoặc chúc mừng.",
+          "result_type": "ask_missing_info",
+          "policy_output": {
+            "intent": "unclear",
+            "action": "clarify_user_intent",
+            "slots": {
+              "occasion": null,
+              "recipient": null,
+              "budget": null,
+              "budget_min": null,
+              "budget_max": null,
+              "budget_type": null,
+              "flower_preference": [],
+              "flower_avoidance": [],
+              "color_tone": [],
+              "style": [],
+              "delivery_time": null,
+              "customer_name": null,
+              "customer_phone": null,
+              "customer_address": null,
+              "order_id": null
+            },
+            "should_update_state": false,
+            "should_recommend": false
+          },
+          "state": {
+            "occasion": null,
+            "recipient": null,
+            "budget": null,
+            "budget_min": null,
+            "budget_max": null,
+            "budget_type": null,
+            "flower_preference": [],
+            "flower_avoidance": [],
+            "color_tone": [],
+            "style": [],
+            "delivery_time": null,
+            "customer_name": null,
+            "customer_phone": null,
+            "customer_address": null
+          }
+        }
+      ]
+    }
+  ]
+}

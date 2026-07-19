@@ -1,0 +1,67 @@
+{
+  "requirements": {
+    "occasion": "tặng bạn",
+    "recipient": "bạn",
+    "budget": 500000,
+    "budget_type": "maximum",
+    "flower_preference": [
+      "cẩm tú cầu"
+    ],
+    "flower_avoidance": [],
+    "color_tone": [],
+    "style": [],
+    "meaning_intent": [
+      "tình bạn",
+      "chân thành"
+    ]
+  },
+  "recommended_flowers": [
+    {
+      "flower_name": "Hoa cẩm tú cầu",
+      "english_name": "Hydrangea",
+      "reason": "Từng chùm hoa nhỏ kết thành bông tròn lớn, đổi màu theo độ pH đất, biểu tượng cho lòng biết ơn chân thành.",
+      "matched_requirements": [
+        "matched_flower_preference",
+        "matched_occasion_or_context",
+        "matched_meaning_intent"
+      ],
+      "semantic_score": 0.74749476,
+      "keyword_score": 7,
+      "hybrid_score": 7.74749476,
+      "retrieval_source": "hybrid"
+    },
+    {
+      "flower_name": "Hoa dừa cạn",
+      "english_name": "Vinca (Periwinkle)",
+      "reason": "Hoa nhỏ nở quanh năm bất kể thời tiết khắc nghiệt, biểu tượng cho tình bạn bền bỉ theo thời gian.",
+      "matched_requirements": [
+        "matched_occasion_or_context",
+        "matched_meaning_intent"
+      ],
+      "semantic_score": 0,
+      "keyword_score": 3,
+      "hybrid_score": 3,
+      "retrieval_source": "hybrid"
+    },
+    {
+      "flower_name": "Hoa lan vũ nữ",
+      "english_name": "Oncidium Orchid",
+      "reason": "Từng chùm hoa nhỏ rung rinh như đàn bướm múa, mang lại cảm giác vui tươi phóng khoáng cho bó hoa.",
+      "matched_requirements": [
+        "matched_occasion_or_context",
+        "matched_meaning_intent"
+      ],
+      "semantic_score": 0,
+      "keyword_score": 2,
+      "hybrid_score": 2,
+      "retrieval_source": "hybrid"
+    }
+  ],
+  "avoid_flowers": [],
+  "budget_note": {
+    "budget": 500000,
+    "budget_type": "maximum",
+    "note": "Budget sẽ được dùng để lọc/tối ưu combo bó hoa ở bước inventory hoặc pricing."
+  },
+  "final_advice": "Với ngân sách khoảng 500,000 VND, hệ thống gợi ý sử dụng Hoa cẩm tú cầu, Hoa dừa cạn, Hoa lan vũ nữ để tặng bạn nhân dịp tặng bạn. Các lựa chọn này được chọn dựa trên sở thích hoa, ý nghĩa và mức độ phù hợp với yêu cầu khách hàng."
+}

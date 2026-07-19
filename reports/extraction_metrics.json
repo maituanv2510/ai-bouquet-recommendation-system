@@ -1,0 +1,9 @@
+{
+  "total_samples": 200,
+  "json_validity_rate": 1.0,
+  "budget_accuracy": 1.0,
+  "occasion_accuracy": 1.0,
+  "recipient_accuracy": 0.95,
+  "flower_preference_exact_match": 1.0,
+  "color_tone_exact_match": 1.0
+}
